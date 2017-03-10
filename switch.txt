@@ -11,6 +11,23 @@ git branch
 git checkout master
 git merge dev
 
+#取消快速合并
+git merge --no-ff -m "merge with no-ff" dev
+
 #删除
 git branch -d dev
 
+#分支图
+git log --gragh
+
+#暂存工作区
+git stash
+
+#查看stash
+git stash list
+
+#恢复stash
+git stash apply
+git stash drop
+==>
+git stash pop
