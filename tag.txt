@@ -1,0 +1,21 @@
+#添加标签
+git tag v1.0
+git tag -a v0.1 -m "text" branch-id
+git tag -s v0.2 -m "私钥" branch-id
+
+#查看日志
+git log --pretty=oneline --abbrev-commit
+
+#查看标签
+git show tagname
+
+#删除标签
+git tag -d v0.1
+
+#推送标签
+git push origin v1.0
+git push origin --tags
+
+#远程删除标签
+git tag -d v1.0
+git push origin :refs/tags/1.0
