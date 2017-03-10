@@ -31,3 +31,20 @@ git stash apply
 git stash drop
 ==>
 git stash pop
+
+#强行删除未同步的分支
+git branch -D name
+
+#查看远程库
+git remote
+git remote -v
+
+#本地推送
+git push origin branch-name
+
+#本地创建和远程分支对应的分支
+git checkout -b branch-name origin/branch-name
+git branch --set-upstream branch-name origin/branch-name
+
+#远程抓取分支
+git pull
