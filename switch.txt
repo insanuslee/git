@@ -1,0 +1,16 @@
+#添加分支
+git branch dev
+git checkout dev
+==>
+git checkout -b dev
+
+#查看当前分支
+git branch
+
+#切回master并且合并
+git checkout master
+git merge dev
+
+#删除
+git branch -d dev
+
